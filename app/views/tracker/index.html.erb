@@ -1,8 +1,16 @@
-<h1>Enter Date Range</h1>
-<%= form_tag("/generate", method: "get") do %>
-	<%= label_tag :hashtag, '#' %>
-	<%= text_field_tag :hashtag %> 
-	<%= label_tag :start_date, "Start Date:" %>
-	<%= date_field_tag :start_date %>
-	<%= submit_tag "Submit", class: 'button radius' %>
-<% end %>
+<div id="index_page">
+	<head><%= stylesheet_link_tag "index" %></head>
+	<div id="submit_form">
+		<%= form_tag("/generate", method: "get") do %>
+			<div id="hashtag_field">
+				<%= label_tag :hashtag, 'Twitter Search:' %>
+				<%= text_field_tag :hashtag %> 
+			</div>
+			<div id="start_date_field">
+				<%= label_tag :start_date, "Start Date:" %>
+				<%= date_field_tag :start_date %>
+			</div>
+			<%= submit_tag "Submit", class: 'button radius' %>
+		<% end %>
+	</div>
+</div>

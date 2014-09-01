@@ -1,0 +1,42 @@
+body{
+	background-color: #D3D3D3;
+}
+.flexbox {
+	background-color: #D3D3D3;
+}
+#index_page {
+	#submit_form {
+		box-shadow: 10px 10px 5px #888888;
+		background-color: white;
+		width: 350px;
+		margin-top: 35px;
+	  padding: 25px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  border: 2px solid;
+	  border-radius: 25px;
+	  #hashtag_field {
+	  	label {
+	  		font-size: 20px;
+	  	}
+	  	input {
+	  		width: 300px;
+				font-size: 25px;
+				height: 45px;
+	  	}
+	  }
+	  #start_date_field {
+	  	label {
+	  		font-size: 20px;
+	  	}
+	  	input {
+	  		width: 300px;
+				font-size: 25px;
+				height: 45px;
+	  	}
+	  }
+	  .button {
+	  	width: 300px;
+	  }
+	}
+}
